@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Services</title>
+    <style>
+        /* Reset default margins and paddings */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global typography */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Container for centralizing content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+
+        /* Hero section */
+        .hero {
+            background-color: #f9f9f9;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .hero .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .button:hover {
+            background-color: #555;
+        }
+
+        /* Services section */
+        .services {
+            margin-top: 50px;
+        }
+
+        .service-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            margin-left: 200px;
+        }
+
+        .service-item p {
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Food Delivery Services</h1>
+                <p>Explore our range of services designed to enhance your food delivery experience.</p>
+                <a href="{{url_for('predict')}}" class="button">Get Started</a>
+            </div>
+        </section>
+
+        <section class="services" >
+            <div class="container">
+                <div class="service-item">
+                    <h2>Real-Time Tracking</h2>
+                    <p>Track your order every step of the way, from preparation to delivery.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Fast Delivery</h2>
+                    <p>Experience quick and efficient delivery times to satisfy your hunger.</p>
+                </div>
+                <div class="service-item">
+                    <h2>Customizable Options</h2>
+                    <p>Personalize your orders with special instructions and dietary preferences.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 10px;
+    margin-bottom: 200px;
+    margin-left: 400px;">
+        <div class="container">
+            <p>&copy; 2024 Food Delivery Services. All rights reserved.</p>
+        </div>
+
+          <p>Contact us: (555) 555-5555 | fooddeliveryprediction@gmail.com</p>
+          <div class="social-media">
+              <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+          </div>
+          <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  
+    </footer>
+</body>
+</html>

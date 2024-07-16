@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Time Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <div>    
+      <a  style="margin-left: 750px;" href="{{url_for('about')}}">ABOUT</a>
+      <a style="margin-left: 40px;" href="{{url_for('predict')}}">PREDICT</a>  
+      <a style="margin-left: 40px;" href="{{url_for('service')}}">SERVICES</a>
+    </div>
+
+  </header>
+  <section class="hero" style="margin-top: 400px; margin-left: 700px;">
+    <h1>Welcome to Food Delivery Time Prediction</h1>
+    <p>Experience the future of food delivery with accurate time predictions!</p>
+    <button style="margin-left: 200px;"><a href="{{url_for('predict')}}" class="button">Predict Now</a></button>
+  </section>
+
+</body>
+</html>

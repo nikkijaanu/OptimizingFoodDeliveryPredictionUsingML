@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Prediction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='prediction.css')}}">
+    
+</head>
+<body>
+    <h2>Delivery Prediction Form</h2>
+    <form action="{{url_for('submit')}}" method="POST">
+        <div>
+            <label for="Delivery_person_Ratings">Delivery_person_Ratings:</label>
+            <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="enter the Delivery_person_Ratings" required><br>
+        </div>
+        <div>
+            <label for="Delivery_location_latitude">Delivery_location_latitude:</label>
+            <input type="text" id="Delivery_location_latitude" name="Delivery_location_latitude" placeholder="enter the Delivery_location_latitude" required><br>
+        </div>
+        
+        
+        <div>
+            <label for="Delivery_location_longitude">Delivery_location_longitude:</label>
+            <input type="text" id="Delivery_location_longitude" name="Delivery_location_longitude" placeholder="enter the Delivery_location_longitude" required><br>
+        </div>
+        <div>
+            <label for="Restaurant_latitude">Restaurant_latitude:</label>
+            <input type="text" id="Restaurant_latitude" name="Restaurant_latitude" placeholder="enter the Restaurant_latitude" required><br>
+        
+        </div>
+        
+
+        <div>
+            <label for="restaurant_longitude">Restaurant_longitude:</label>
+            <input type="text" id="restaurant_longitude" name="restaurant_longitude" placeholder="enter the restaurant_longitude" required><br>
+
+</div>
+<div>
+    <label for="Time_Orderd">Time_Orderd:</label>
+    <input type="text" id="Time_Orderd" name="Time_Orderd" placeholder="enter the Time_Orderd" required><br>
+
+</div>
+    
+        <div>
+            <label for="Type_of_order">Type_of_order:</label>
+            <select id="Type_of_order" name="Type_of_order" required>
+                <option value="Drinks">Drinks</option>
+                <option value="Snack">Snack</option>
+                <option value="Meal">Meal</option>
+                <option value="Buffet">Buffet</option>
+
+
+            </select><br>
+        </div>
+        <div>
+            <label for="Weatherconditions">Weatherconditions:</label>
+            <select id="Weatherconditions" name="Weatherconditions" required>
+                <option value="conditions Stormy">conditions Stormy</option>
+                <option value="conditions Fog">conditions Fog</option>
+                <option value="conditions Windy">conditions Windy</option>
+                <option value="conditions Sunny">conditions Sunny</option>
+
+            </select><br>
+        </div>
+        <div>
+            <label for="Road_traffic_density"> Road_traffic_density:</label>
+            <select id="Road_traffic_density" name="Road_traffic_density" required>
+                <option value="Jam">Jam</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+                <option value="High">High</option>
+
+            </select><br>
+        </div>
+        <div>
+            <label for="Festival">Festival</label>
+            <select id="Festival" name="Festival" required>
+                <option value="Yes">Yes</option>
+                <option value=" No">No </option>  
+            </select></div>
+
+ <div>
+                <label for="City">City</label>
+                <select id="City" name="City" required>
+                    <option value="Metropolitian">Metropolitian</option>
+                    <option value=" Urban">Urban </option>  
+                </select></div>
+            
+        <button type="submit">Predict Delivery Time</button>
+    </form>
+</body>
+</html>

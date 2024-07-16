@@ -1,0 +1,53 @@
+body {
+    background-image: url(https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-05/food-delivery-time-prediction.png);
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+header {
+    padding: 20px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header a {
+    font-size: larger;
+    font-family: 'Trebuchet MS';/* Preferred font for links */
+    text-decoration: none;
+     color: black; /* Link color */
+}
+
+header a:hover {
+    color: gray; /* Hover color for links */
+}
+.hero button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #45a049;
+  }
+  
+  .hero button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero button a:hover {
+    text-decoration: none;
+  }

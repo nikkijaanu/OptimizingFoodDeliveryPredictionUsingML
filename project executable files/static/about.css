@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2021-03/Food-delivery.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Choose appropriate font */
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-section {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #444;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
